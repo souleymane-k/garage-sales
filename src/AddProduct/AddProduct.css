@@ -1,0 +1,76 @@
+*{
+  box-sizing: border-box;
+  /* background-image: url(../../souleymane-3.jpg); */
+}
+
+fieldset {
+    max-width: 60%;
+    margin: 30px auto;
+    height:640px;
+    /* display: flex; */
+    border: none;
+    border-radius: 4px;
+    box-shadow: -1px 1px 5px 4px black; 
+    padding: 3px;
+    background-color: #EAF6F6;
+  }
+  h2{
+    color:#551A8B;
+  }
+  .form-group{
+    margin: 20px 20px  20px 20px;
+  
+  }
+  .form-group-select{
+    margin: 20px 20px  20px 20px;
+    width:95%;
+    height:50px;
+  }
+  /* .add-result{
+    margin:100px; */
+    /* height:1000px; */
+  /* } */
+  label{
+    color:#551A8B;
+  }
+  .form__button{
+    /* position:absolute; */
+    margin: 0 auto;
+    height:35px;
+    
+} 
+.form__button_cancel{
+  /* margin: 10px 10px; */
+  height:35px;
+
+
+}
+.form__button_cancel:hover{
+  background-color:red;
+  color:white;
+
+}
+
+.form__button:hover{
+  background-color:green;
+  color:white;
+
+}
+.add-product{
+  /* background-image: url(../../souleymane-3.jpg); */
+  height:1000px;
+}
+.form__button__group{
+  margin: 20px 300px;
+}
+@media all and (max-width: 640px) {
+
+  .form-group-select{
+    margin: 20px 20px  20px 20px;
+    width:86%;
+    height:50px;
+  }
+  .form__button__group{
+    margin: 20px 70px;
+  }
+  }

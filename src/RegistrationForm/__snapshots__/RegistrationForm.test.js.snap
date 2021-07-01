@@ -1,0 +1,90 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RegistrationForm component renders the complete form 1`] = `
+<form
+  className="signUpForm-form"
+  onSubmit={[Function]}
+>
+  <fieldset
+    className="registrationForm"
+  >
+    <h3>
+      Create an account
+    </h3>
+    <div
+      className="form-group"
+    >
+      <label
+        className="signUpForm-form__username-label"
+        htmlFor="signUpForm-form__username"
+      >
+        Username
+      </label>
+      <input
+        id="SignUpForm-form__username"
+        name="username"
+        placeholder="username"
+        required={true}
+        type="text"
+      />
+    </div>
+    <div
+      className="form-group"
+    >
+      <label
+        className="signUpForm-form__email-label"
+        htmlFor="signUpForm-form__email"
+      >
+        Email
+      </label>
+      <input
+        id="SignUpForm__email"
+        name="email"
+        placeholder="email"
+        required={true}
+        type="email"
+      />
+    </div>
+    <div
+      className="form-group"
+    >
+      <label
+        className="signUpForm-form__password-label"
+        htmlFor="signUpForm-form__password"
+      >
+        Password
+      </label>
+      <input
+        id="SignUpForm-form__password"
+        name="password"
+        placeholder="password"
+        required={true}
+        type="password"
+      />
+    </div>
+    <div
+      className="form-group"
+    >
+      <label
+        className="SignUpForn-form__password-repeat-label"
+        htmlFor="signUpForm-form__password-repeat"
+      >
+        Confirm Password
+      </label>
+      <input
+        id="SignUpForn-form__password-repeat"
+        name="passwordRepeat"
+        placeholder="confirm password"
+        required={true}
+        type="password"
+      />
+    </div>
+    <button
+      className="btn"
+      type="submit"
+    >
+       Submit
+    </button>
+  </fieldset>
+</form>
+`;

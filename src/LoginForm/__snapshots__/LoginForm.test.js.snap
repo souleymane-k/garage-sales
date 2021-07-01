@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LoginForm component renders the complete form 1`] = `
+<form
+  className="login-form"
+  onSubmit={[Function]}
+>
+  <div
+    role="alert"
+  />
+  <fieldset
+    className="loginForm"
+  >
+    <div
+      className="form-group"
+    >
+      <label
+        htmlFor="LoginForm__username"
+      >
+        Username
+      </label>
+      <input
+        id="LoginForm__username"
+        name="username"
+        placeholder="username"
+        required={true}
+        type="text"
+      />
+    </div>
+    <div
+      className="form-group"
+    >
+      <label
+        htmlFor="LoginForm__password"
+      >
+        Password
+      </label>
+      <input
+        id="LoginForm__password"
+        name="password"
+        placeholder="password"
+        required={true}
+        type="password"
+      />
+    </div>
+    <div
+      className="form-controls"
+    >
+      <button
+        className="submitButton"
+        type="submit"
+      >
+        Login
+      </button>
+    </div>
+  </fieldset>
+</form>
+`;

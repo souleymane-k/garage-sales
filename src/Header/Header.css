@@ -1,0 +1,225 @@
+*{
+    box-sizing: border-box;
+    
+    /* background-image: url(../../souleymane-3.jpg); */
+    /* text-align: center; */
+}
+
+
+.site-nav{
+  position:relative;
+  margin: 0;
+  height: 100px;
+  background-color: red;
+  width: 100%;
+  color: white;
+  /* background-image: url(../../souleymane-3.jpg);  */
+}
+
+
+.titlelink{
+  position:absolute;
+  font-size: 30px;
+  margin-top: -20px;
+  color:white;
+  /* margin-bottom: 60px; */
+
+
+}
+
+.registerLink{
+  position:absolute;
+  right:80px;
+  padding:2px;
+  border: 2px solid white;
+  width:80px;
+  height: 30px;
+  text-align: center;
+  border-radius: 10px;
+  color: white;
+ 
+}
+.addProductlink{
+  position:absolute;
+  right:80px;
+  /* padding:; */
+  border:solid white;
+  width:80px;
+  height: 30px;
+  text-align: center;
+  border-radius: 10px;
+  color: white;
+}
+.addProductlink:hover {
+  background-color: black;
+  border: 1px solid;
+  cursor: pointer;
+}
+
+.logoutlink{
+  position:absolute;
+  right:10px;
+  padding:2px;
+  border:solid;
+  width:60px; 
+  height: 30px;
+  text-align: center;
+  border-radius: 10px;
+  color: white;
+}
+.logoutlink:hover {
+  background-color: black;
+  color: white;
+  border: 1px solid;
+  cursor: pointer;
+}
+
+
+.registerLink:hover {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  cursor: pointer;
+}
+.loginLink{
+  position:absolute;
+  right:10px;
+  padding:2px;
+  border: 2px solid white;
+  width:60px; 
+  height: 30px;
+  text-align: center;
+  color:white;
+  border-radius: 10px;
+ 
+}
+.loginLink:hover {
+  background-color: black;
+  color: white;
+  border: 1px solid;
+  cursor: pointer;
+}
+
+
+  nav {
+    border-bottom: 2px solid;
+    display: flex;
+    max-width: 100%;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 0 .5em;
+  }
+  
+  .resultlink{
+    margin: 30px;
+    color:black;
+    width:40px;
+    border-radius: 5px;
+    
+  }
+  
+     a {
+      font-size: 14px;
+      text-decoration: none;
+    }
+  
+    div a {
+      font-size: 14px;
+      text-decoration: none;
+    }
+  
+    h1 {
+      font-size: 2px;
+      color:white;
+    }
+  /* ----------------Media Query max-width: 620px -------------------------*/
+  
+  @media only screen and (max-width: 620px) {
+
+    .site-nav{
+      text-align: center;
+    }
+    
+    nav {
+      padding: 5px;
+      display: flex;
+      flex-direction: row;
+    }
+
+     .site-nav__dir {
+      display: flex;
+      flex-direction: row;
+    }
+    .site-nav{
+      height:200px;
+      width:100%;
+      margin-bottom:40px;
+    }
+
+       a {
+        font-size: 1em;
+        text-decoration: none;
+      }
+    
+      div a {
+        font-size: 1em;
+        text-decoration: none;
+      }
+    
+      h1 {
+        font-size: 30px;
+        text-align: center;
+        margin-top:-90px;
+        margin-right: 200px;
+       
+      }
+      .registerLink{
+        position:relative;
+        right:310px;
+        padding:2px;
+        border: 2px solid white;
+        width:80px;
+        height: 30px;
+        text-align: center;
+        border-radius: 10px;
+       
+      }
+      .loginLink{
+        position:relative;
+        right:250px;
+        padding:2px;
+        border:solid;
+        width:60px; 
+        height: 30px;
+        text-align: center;
+        border-radius: 10px;
+       
+      }
+      .logoutlink{
+        position:relative;
+        right:250px;
+        padding:2px;
+        border:solid;
+        width:60px; 
+        height: 30px;
+        text-align: center;
+        border-radius: 10px;
+        margin-bottom: -20px;
+      }
+
+      .addProductlink{
+        position:relative;
+        right:350px;
+        /* margin: 100px; */
+        padding:2px;
+        border: 2px solid white;
+        width:80px;
+        height: 30px;
+        text-align: center;
+        border-radius: 10px;
+      }
+
+    }
+  

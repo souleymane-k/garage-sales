@@ -1,0 +1,213 @@
+*{
+  box-sizing: border-box;
+  background-image: #ababab;
+  /* background-image: url(../../souleymane-3.jpg);  */
+  /* z-index: 1;  */
+  
+
+}
+    label{
+      margin: 1em 0 0 0;
+      padding: .25em 0;
+      text-align: left;
+      width: auto;
+
+    }
+
+  
+     input {
+      width: 60%;;
+      line-height: 2em;
+      padding: 0 .5em;
+      border-radius: 2px;
+      border: 2px solid; 
+
+    } 
+  
+    input:focus {
+      border: 2px solid;
+    }
+  
+    
+    h3{
+        text-align: center;
+        color:black;
+        margin:2px;
+    }
+   
+   /* input[type='submit'] { */
+    /* margin: 2em auto 1em auto; */
+     /* margin-top:5px;
+    padding: 0.25em 0;
+    width: 60%; */
+    /* background-color: black; */
+    /* color:white;
+    border: 1px solid whitesmoke;
+    border-radius: 2px;
+    box-shadow: 2px 2px 2px 0px black;
+    cursor: pointer; 
+    
+   }  */
+   .submitButton{
+    /* position: absolute; */
+    width: 100%;
+    margin:5px auto;
+    padding: 0.25em 0;
+    /* width: 400px; */
+    /* left: 600px; */
+    height:40px;
+    background-color: black;
+    color:white;
+    border: 1px solid whitesmoke;
+    border-radius: 2px;
+    /* box-shadow: 2px 2px 2px 0px black; */
+    cursor: pointer;
+   }
+    
+  label {
+    margin: 1em 0 0 0;
+    padding: .25em 0;
+    text-align: left;
+    width: auto;
+    color:white;
+  /*   display: flex;
+    flex-direction: column nowrap; */
+  }
+  
+.login-page {
+  padding: 2em 0;
+  margin: 0;
+}
+
+
+form {
+  margin: 0 auto;
+  /* // border: 1px solid black; */
+}
+.login-form{
+  /* background-image: url(../../souleymane-3.jpg); */
+  height:1000px;
+  margin-top:0;
+}
+
+.loginForm{
+  max-width: 60%;
+  display: flex;
+  height: 300px;
+  margin:30 auto;
+  flex-flow: column nowrap;
+  background-color: #EAF6F6;
+  /* // justify-content: center;
+  // align-items: center; */
+  background-color: #E6E6FA;
+  border: none;
+  border-radius: 4px;
+  box-shadow: -1px 1px 5px 4px #000000;
+  padding: 1em 1.5em;
+}
+
+  label {
+    margin: 1em 0 0 0;
+    padding: .25em 0;
+    text-align: left;
+    width: auto;
+    color:black
+  /*   display: flex;
+    flex-direction: column nowrap; */
+  }
+
+  input {
+    width: 100%;
+    line-height: 2em;
+    padding: 0 .5em;
+    border-radius: 2px;
+    border: 2px solid ;
+    /* background-color: ; */
+  }
+
+  input:focus {
+    border: 2px solid red;
+  }
+
+  /* div {
+    margin: 1em;
+  } */
+
+
+.error-msg {
+  color: color-error;
+}
+
+.warning-msg {
+  margin-top: 1em;
+  color: color-primary;
+  font-size: 12px;
+}
+
+input[type='submit'] {
+  margin: 2em auto 1em auto;
+  padding: 0.25em 0;
+  width: 100px;
+  background-color: color-overlay;
+  border: 1px solid color-surface-light;
+  border-radius: 2px;
+  box-shadow: 2px 2px 2px 0px color-shadow;
+  transition: box-shadow 0.1s;
+}
+input:hover {
+    background-color: red;
+    color: white;
+    border: 1px solid;
+    cursor: pointer;
+  }
+  input:focus {
+    background-color: red;
+    color: color-text-normal;
+    border: 1px solid color-quaternary;
+    box-shadow: none;
+  }
+  input:active {
+    background-color: color-overlay-dark;
+    color: color-text-normal;
+    border: 1px solid color-secondary;
+  }
+
+
+
+/* ............@media Query...........................*/
+
+@media all and (max-width: 640px) {
+  .submitButton{
+    /* position: relative; */
+    margin:0 auto;
+    padding: 0.25em 0;
+    width:100%;
+    /* left:150px; */
+    height:40px;
+    background-color: black;
+    color:white;
+    /* border: 1px solid whitesmoke; */
+    border-radius: 2px;
+    box-shadow: 2px 2px 2px 0px black;
+    cursor: pointer;
+   }
+   .loginform{
+    position: absolute;
+    width: 80%;
+    margin: 40 auto;
+    color:#EAF6F6;
+    /* display: flex; */
+    height: 200px;
+    flex-flow: column nowrap;
+    /* // justify-content: center;
+    // align-items: center; */
+    background-color: #E6E6FA;
+    border: none;
+    border-radius: 4px;
+    box-shadow: -1px 1px 5px 4px #000000;
+    padding: 1em 1.5em;
+  }
+   
+
+ } 
+

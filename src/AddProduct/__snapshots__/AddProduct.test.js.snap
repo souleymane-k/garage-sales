@@ -1,0 +1,100 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AddProduct  component renders the complete form 1`] = `
+<form
+  className="add-product"
+  onSubmit={[Function]}
+>
+  <fieldset>
+    <div>
+      <h2>
+        New Product
+      </h2>
+    </div>
+    <div
+      className="form-group"
+    >
+      <label
+        htmlFor="product_name"
+      >
+        Product*
+      </label>
+      <input
+        className="form__input"
+        id="product_name"
+        name="product_name"
+        onChange={[Function]}
+        required={true}
+        type="text"
+      />
+    </div>
+    <div
+      className="form-group"
+    >
+      <label
+        htmlFor="product_price"
+      >
+        Price*
+      </label>
+      <input
+        className="form__input"
+        id="product_price"
+        name="product_price"
+        onChange={[Function]}
+        required={true}
+        type="integer"
+      />
+    </div>
+    <div
+      className="form-group"
+    >
+      <label
+        htmlFor="date_posted"
+      >
+        date*
+      </label>
+      <input
+        className="form__input"
+        id="date_posted"
+        name="date_posted"
+        onChange={[Function]}
+        required={true}
+        type="integer"
+      />
+    </div>
+    <div
+      className="form-group"
+    >
+      <label
+        htmlFor="description"
+      >
+        Description *
+      </label>
+      <input
+        className="form__input"
+        id="description"
+        name="description"
+        onChange={[Function]}
+        required={true}
+        type="text"
+      />
+    </div>
+    <div
+      className="form__button__group"
+    >
+      <button
+        className="form__button"
+        type="submit"
+      >
+        Save Product
+      </button>
+      <button
+        className="form__button_cancel"
+        type="reset"
+      >
+        Cancel
+      </button>
+    </div>
+  </fieldset>
+</form>
+`;

@@ -1,0 +1,138 @@
+.Result {
+    background-color: #EAF6F6;
+    /* background-image: url(../../souleymane-3.jpg); */
+    color: black;
+    margin: 0px auto;
+    max-width: 280px;
+    padding: 8px 0 8px 8px;
+    border: solid;
+    border-radius: 10px;
+    /* position: relative; */
+  }
+  h2{
+      text-align: center;
+      /* color:white; */
+  }
+  
+  .Result_link{
+    background-color: #bd0909;
+    margin:5px;
+    text-align:center;
+  }
+  .Result_link:hover {
+    color: white;
+  }
+  .Result_delete:hover {
+    background-color: #bd0909;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  .resultElements{
+    /* position:absolute; */
+    /* margin: 1px auto; */
+    padding:5px;
+    height:auto;
+    margin:2px;
+    /* margin:50px auto; */
+  }
+  .Result_month_taken{
+    background-color: greenyellow;
+    margin:5px;
+    padding:2px;
+    border-radius: 10px;
+    text-align:center;
+  }
+  .Result__meal_taken{
+    background-color: white;
+    margin:5px;
+    padding:2px;
+    border-radius: 10px;
+    text-align:center;
+  }
+  .Result_result_read{
+    background-color: #eba83a;
+    margin:5px;
+    /* padding:2px; */
+    border-radius: 10px;
+    text-align:center;
+  }
+  .Result_month_id{
+    background-color: greenyellow;
+    margin:5px;
+    padding:2px;
+    border-radius: 10px;
+    text-align:center;
+  }
+  .Results_description{
+    background-color: #ffc7c7;
+    margin:5px;
+    /* padding:2px; */
+    border-radius: 10px;
+    text-align:center;
+  }
+  .Result_userid{
+    background-color: #eba83a;
+    margin:5px;
+    /* padding:2px; */
+    border-radius: 10px;
+    text-align:center;
+  }
+  .Result_diabetestype{
+    background-color: #00ead3;
+    margin:5px;
+    /* padding:2px; */
+    border-radius: 10px;
+    text-align:center;
+  }
+  .Result_delete{
+    background-color: red;
+    margin:10px auto;
+    width:100%;
+    height: 30px;
+    /* padding:2px; */
+    /* border-radius: 10px; */
+    text-align:center;
+    border:none;
+  }
+  .edit_product{
+    background-color:greenyellow;
+    margin:10px auto;
+    width:100%;
+    height: 30px;
+    text-align:center;
+    border:none;
+  }
+  /* .result-form{
+    background-image: url(../../souleymane-3.jpg);
+  } */
+  span{
+    margin-left: 10px;
+  }
+  
+
+  
+  @media all and (min-width: 640px) {
+
+    .Result {
+      /* background-color: #EAF6F6; */
+      /* background-image: url(../../souleymane-3.jpg); */
+      color: black;
+      margin: 15px auto;
+      max-width: 40%;
+      padding: 8px 0 8px 8px;
+      border: solid;
+      border-radius: 10px;
+      /* position: relative; */
+    }
+    .Result_result_dates{
+      background-color: #00ead3;
+      margin:5px;
+      /* padding:2px; */
+      border-radius: 10px;
+      text-align:center;
+    }
+    /* .result-form{
+      background-image: url(../../souleymane-3.jpg);
+    } */
+  }

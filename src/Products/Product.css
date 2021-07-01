@@ -1,0 +1,16 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    line-height: 1.666;
+    background: #c0d2d4;
+    color: #555;
+  }
+
+  .item{
+      border:solid;
+      margin:10px;
+      background-color: azure;
+  }
+  Link{
+      text-align: center;
+  }
