@@ -56,7 +56,7 @@ export default class NoteProduct extends React.Component {
              price:
           {'   '}
             <span className='meal_taken'>
-              {product_price}
+              $ {product_price}
             </span> 
           </div> 
          </div>

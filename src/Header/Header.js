@@ -3,21 +3,23 @@ import { Link } from 'react-router-dom';
 import TokenService from '../services/TokenService';
 import './Header.css';
 
-import AuthContext from '../contexts/AuthContext';
+// import AuthContext from '../contexts/AuthContext';
+import ApiContext from '../contexts/ApiContext';
 
 export default class Header extends React.Component {
 
-  static contextType = AuthContext;
+  static contextType = ApiContext;
 
   handleLogoutClick = () => {
     TokenService.clearAuthToken();
-    this.context.setUsername(null);
+    // this.context.setUsername(null);
     this.context.setUser(null);
-    this.context.setUserId(null);
+    // this.context.setUserId(null);
+    console.log(this.context);
   }
 
 
-  // to={`/${this.context.usernname}/AddResult`
+  
   renderLogoutLink() {
     return (
       <div className='site-nav__dir--logged-in'>
@@ -26,9 +28,13 @@ export default class Header extends React.Component {
            Product
           </Link>
           {' '}
-        <Link onClick={this.handleLogoutClick} to='/' className='logoutlink'>
+          <Link onClick={this.handleLogoutClick} to='/' className='logoutlink'>
           Logout
           </Link>
+
+         {/* <button onClick={this.handleLogoutClick} to='/' className='logoutlink'>
+          Logout
+          </button>  */}
         
   
       </div>
@@ -51,9 +57,12 @@ export default class Header extends React.Component {
           <Link className="titlelink"  to='/'>
           Garages Sales
           </Link>
+        
         </h1>
+        
         {
-          TokenService.hasAuthToken()
+           this.context.user
+          // TokenService.hasAuthToken()
             ? this.renderLogoutLink()
             : this.renderLoginLink()
         }

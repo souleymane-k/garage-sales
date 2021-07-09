@@ -3,6 +3,7 @@ import ApiContext from '../contexts/ApiContext';
 import TokenService from '../services/TokenService'
 import './EditProduct.css';
 import config from '../config.js'
+import moment from 'moment'
 
 class EditProduct extends Component {
   constructor(props) {
@@ -52,10 +53,12 @@ class EditProduct extends Component {
   
         .then(data => {
           console.log(data)
+          console.log(moment(data.date_posted).format("YYYY-MM-DD"));
           this.setState({
+          
               product_name:{ value: data.product_name, touched: true },
               product_price: { value: data.product_price, touched: true },
-              date_posted: { value: data.date_posted, touched: true },
+              date_posted: { value: moment(data.date_posted).format("YYYY-MM-DD"), touched: true },
               description: { value: data.description, touched: true }
           })
         })
@@ -92,7 +95,8 @@ class EditProduct extends Component {
     console.log('message')
     const id = this.props.match.params.id;
     this.setState({ error: null })
-    console.log(`${config.API_ENDPOINT}/products/${id}`, {
+    
+    fetch(`${config.API_ENDPOINT}/products/${id}`, {
       method: 'PATCH',
       body: JSON.stringify(product),
       headers: {
@@ -101,23 +105,14 @@ class EditProduct extends Component {
         'authorization': `bearer ${TokenService.getAuthToken()}`
       }
     })
-    fetch(`${config.API_ENDPOINT}/products`, {
-      method: 'POST',
-      body: JSON.stringify(product),
-      headers: {
-        'content-type': 'application/json',
-        'Accept': 'application/json',
-        'authorization': `bearer ${TokenService.getAuthToken()}`
-      }
-    })
-      .then(res => {
-        if (!res.ok) {
-          return res.json().then(error => {
-            throw error
-          })
-        }
-        return res.json()
-      })
+      // .then(res => {
+      //   if (!res.ok) {
+      //     return res.json().then(error => {
+      //       throw error
+      //     })
+      //   }
+      //   return res.json()
+      // })
 
       .then(data => {
         product_name.value = '';
@@ -155,7 +150,7 @@ class EditProduct extends Component {
           <div className='form-group'>
             <label htmlFor="product_price">Price*</label>
             <input
-              type="integer"
+            type="number" min="0.00" max="10000.00" step="0.01"
               className="form__input"
               value={this.state.product_price.value}
               name="product_price"
@@ -167,7 +162,7 @@ class EditProduct extends Component {
           <div className='form-group'>
             <label htmlFor="date_posted">date*</label>
             <input
-              type="integer"
+              type="date"
               className="form__input"
               value={this.state.date_posted.value}
               name="date_posted"

@@ -14,3 +14,29 @@ body {
   Link{
       text-align: center;
   }
+  .add-product{
+      position: relative;
+      left: 650px;
+      font-size: 20px;
+      width: 50%;
+      height: 200px;
+      background-color: red;
+      color:white;
+      margin:20px;
+      /* border-radius: 50%; */
+
+  }
+  @media all and (max-width: 640px){
+    .add-product{
+        position: relative;
+        left: 200px;
+        font-size: 20px;
+        width: 50%;
+        height: 200px;
+        background-color: red;
+        color:white;
+        margin:20px auto;
+        /* border-radius: 50%; */
+  
+    }
+  }

@@ -9,7 +9,7 @@ const AuthContext = React.createContext({
   setUser: () => {},
   user: {},
   username: '',
-  userid: null,
+  userId: null,
   error: null,
   setError: () => {},
   clearError: () => {},
