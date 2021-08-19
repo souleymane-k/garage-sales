@@ -2,14 +2,14 @@ import config from '../config';
 import TokenService from './TokenService';
 
 const ProductsApiService = {
-  postResult(result) {
+  postProduct(product) {
     return fetch(`${config.API_ENDPOINT}/products`, {
       method: 'POST',
       headers: {
         'content-type': 'application/json',
         'authorization': `bearer ${TokenService.getAuthToken()}`,
       },
-      body: JSON.stringify(result),
+      body: JSON.stringify(product),
     })
       .then(res =>
         (!res.ok)

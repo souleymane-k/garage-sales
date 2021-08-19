@@ -39,9 +39,7 @@ export default class LoginForm extends Component {
   }
 
   render() {
-    // console.log('login form')
     const { error } = this.state
-    // console.log(error)
     return (
       <form className='login-form' onSubmit={this.handleSubmitJwtAuth}>
         <div role='alert'>
@@ -83,73 +81,6 @@ export default class LoginForm extends Component {
 
 
 
-
-
-
-
-
-
-
-
-//////
-// import React, { Component } from 'react'
-// import { Button, Input } from '../Direction/Direction'
-
-// export default class LoginForm extends Component {
-//   static defaultProps = {
-//     onLoginSuccess: () => {}
-//   }
-
-//   state = { error: null }
-
-//   handleSubmitBasicAuth = ev => {
-//     ev.preventDefault()
-//     const { username, password } = ev.target
-
-//     console.log('login form submitted')
-//     console.log({ username, password })
-
-//     username.value = ''
-//     password.value = ''
-//     this.props.onLoginSuccess()
-//   }
-
-//   render() {
-//     const { error } = this.state
-//     return (
-//       <form
-//         className='LoginForm'
-//         onSubmit={this.handleSubmitBasicAuth}
-//       >
-//         <div role='alert'>
-//           {error && <p className='red'>{error}</p>}
-//         </div>
-//         <div className='username'>
-//           <label htmlFor='LoginForm__username'>
-//             Username
-//           </label>
-//           <Input
-//             name='username'
-//             id='LoginForm__username'>
-//           </Input>
-//         </div>
-//         <div className='password'>
-//           <label htmlFor='LoginForm__password'>
-//             Password
-//           </label>
-//           <Input
-//             name='password'
-//             type='password'
-//             id='LoginForm__password'>
-//           </Input>
-//         </div>
-//         <Button type='submit'>
-//           Login
-//         </Button>
-//       </form>
-//     )
-//   }
-// }
 
 
 

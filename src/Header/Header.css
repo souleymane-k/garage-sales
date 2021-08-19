@@ -5,6 +5,7 @@
 
 
 .site-nav{
+  /* position:fixed; */
   position:relative;
   margin: 0;
   height: 100px;

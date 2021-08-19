@@ -11,7 +11,7 @@ exports[`Product  component renders the complete form 1`] = `
       "entries": Array [
         Object {
           "hash": "",
-          "key": "ym8vnf",
+          "key": "hntayk",
           "pathname": "/",
           "search": "",
           "state": undefined,
@@ -25,7 +25,7 @@ exports[`Product  component renders the complete form 1`] = `
       "listen": [Function],
       "location": Object {
         "hash": "",
-        "key": "ym8vnf",
+        "key": "hntayk",
         "pathname": "/",
         "search": "",
         "state": undefined,

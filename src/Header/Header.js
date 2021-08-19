@@ -12,9 +12,7 @@ export default class Header extends React.Component {
 
   handleLogoutClick = () => {
     TokenService.clearAuthToken();
-    // this.context.setUsername(null);
     this.context.setUser(null);
-    // this.context.setUserId(null);
     console.log(this.context);
   }
 
