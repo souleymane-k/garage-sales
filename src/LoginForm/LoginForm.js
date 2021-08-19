@@ -1,20 +1,25 @@
-import React, { Component } from 'react'
+import React, {useState, useContext } from 'react'
 import AuthApiService from '../services/auth-api-service'
 import ApiContext from '../contexts/ApiContext';
 import TokenService from '../services/TokenService'
 import './LoginForm.css'
 
 
-export default class LoginForm extends Component {
-  static defaultProps = {
-    onLoginSuccess: () => {}
-  }
-  static contextType = ApiContext;
-  state = { error: null }
+export default function  LoginForm (props) {
 
-  handleSubmitJwtAuth = ev => {
+  const context = useContext(ApiContext);
+  // static defaultProps = {
+  //   onLoginSuccess: () => {}
+  // }
+  // static contextType = ApiContext;
+  const [error, setError] = useState();
+  // state = { error: null }
+
+
+  const handleSubmitJwtAuth = ev => {
     ev.preventDefault()
-    this.setState({ error: null })
+    // this.setState({ error: null })
+    setError(null);
     const {username, password} = ev.target
     console.log('login form submitted')
      console.log({ username, password })
@@ -27,21 +32,24 @@ export default class LoginForm extends Component {
   
         TokenService.saveAuthToken(res.authToken)
         username.value = ''
-        this.context.setUser(true)
+        context.setUser(true)
+        // this.context.setUser(true)
         password.value = ''
         console.log('hello world')
-        this.props.onLoginSuccess()
+        props.onLoginSuccess()
+        // this.props.onLoginSuccess()
       })
       .catch(res => {
         console.log(res)
-        this.setState({ error: res.error })
+        setError(res.error)
+        // this.setState({ error: res.error })
       })
   }
 
-  render() {
-    const { error } = this.state
+  // render() {
+    // const { error } = this.state
     return (
-      <form className='login-form' onSubmit={this.handleSubmitJwtAuth}>
+      <form className='login-form' onSubmit={handleSubmitJwtAuth}>
         <div role='alert'>
           {error && <p className='red'>{error.message}</p>}
         </div>
@@ -76,7 +84,7 @@ export default class LoginForm extends Component {
         </fieldset>
       </form>
     )
-  }
+  // }
 }
 
 
