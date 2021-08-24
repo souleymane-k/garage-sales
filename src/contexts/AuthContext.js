@@ -22,7 +22,7 @@ export class AuthProvider extends React.Component {
     error: null,
   };
 
-  setError = error => {
+  setError = (error) => {
     console.error(error);
     this.setState({ error });
   };
