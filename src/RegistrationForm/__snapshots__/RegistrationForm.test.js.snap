@@ -83,7 +83,7 @@ exports[`RegistrationForm component renders the complete form 1`] = `
       className="btn"
       type="submit"
     >
-       Submit
+      Submit
     </button>
   </fieldset>
 </form>

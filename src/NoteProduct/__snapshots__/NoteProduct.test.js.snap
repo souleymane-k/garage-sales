@@ -11,7 +11,7 @@ exports[`NoteProduct component renders the complete form 1`] = `
       "entries": Array [
         Object {
           "hash": "",
-          "key": "ht0jv7",
+          "key": "rx7teq",
           "pathname": "/",
           "search": "",
           "state": undefined,
@@ -25,7 +25,7 @@ exports[`NoteProduct component renders the complete form 1`] = `
       "listen": [Function],
       "location": Object {
         "hash": "",
-        "key": "ht0jv7",
+        "key": "rx7teq",
         "pathname": "/",
         "search": "",
         "state": undefined,

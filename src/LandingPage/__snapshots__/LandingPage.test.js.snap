@@ -1,28 +1,119 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`LandingPage component renders the complete form 1`] = `
-<section
-  className="homePage"
->
-  <div
-    className="firtssection"
+<div>
+  <section
+    className="landingHeader"
   >
-    <h3>
-      What is Garage-Sales App?
-    </h3>
-    <p>
-      Garage sales app is a tool for people who need to complete a quick sale of their house items such as sofa, tv, cell phones, and others online. It will allow to access more buyers and make good deals. 
-    </p>
-  </div>
-  <div
-    className="secondsection"
+    <div
+      className="firtssection"
+    >
+      <h2>
+        What is Garage-Sales App?
+      </h2>
+      <p>
+        Garage sales app is a tool for people who need to complete a quick sale of their house items such as sofa, tv, cell phones, and others online. It will allow to access more buyers and make good deals. 
+      </p>
+    </div>
+    <div
+      className="secondsection"
+    >
+      <h2>
+        Why an App for Garage sales
+      </h2>
+      <p>
+        This App helps to make the neighboring sales more attractive and increase the target population. In addition, the garage sales app also responds to security needs where buyers and sellers can peacefully meet and complete their business. Please Register and then sign.
+      </p>
+    </div>
+    <div
+      className="thirdsection"
+    >
+      <h2>
+        Why an App for Garage sales
+      </h2>
+      <p>
+        Greate accessibility nationwide  to hundreds of items in a single platform. In addition, it is an exchange platform to create a tool of communication between salers and buyers.
+      </p>
+    </div>
+  </section>
+  <section
+    className="homePage"
   >
-    <h3>
-      Why an App for Garage sales
-    </h3>
-    <p>
-      This App responds to the need to make the neighboring sales more attractive and increase the target population. In addition, the garage sales app also responds to security needs where buyers and sellers can peacefully meet and complete their business. Please Register and then sign.
-    </p>
-  </div>
-</section>
+    <div
+      className="item"
+      id="box1"
+    >
+      <h3>
+        Living Room Table $200. Contact me at 555 666 6769
+      </h3>
+    </div>
+    <div
+      className="item"
+      id="box2"
+    >
+      <h3>
+        Dinning Chair $20 each
+      </h3>
+    </div>
+    <div
+      className="item"
+      id="box3"
+    >
+      <h3>
+        Chair with cuttion $15
+      </h3>
+    </div>
+    <div
+      className="item"
+      id="box4"
+    >
+      <h3>
+        Orange flower 
+      </h3>
+    </div>
+    <div
+      className="item"
+      id="box5"
+    >
+      <h3>
+        Why an App for Garage sales
+      </h3>
+    </div>
+    <div
+      className="item"
+      id="box6"
+    >
+      <h3>
+        Why an App for Garage sales
+      </h3>
+    </div>
+    <div
+      className="item"
+      id="box7"
+    >
+      <h3>
+        Why an App for Garage sales
+      </h3>
+    </div>
+    <div
+      className="item"
+      id="box8"
+    >
+      <h3>
+        Beautiful Flower
+      </h3>
+    </div>
+    <div
+      className="item"
+      id="box9"
+    >
+      <h3>
+        Pink Head Set for $10 
+      </h3>
+    </div>
+  </section>
+  <section
+    className="lastSection"
+  />
+</div>
 `;

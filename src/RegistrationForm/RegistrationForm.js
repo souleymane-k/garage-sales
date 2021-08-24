@@ -1,19 +1,21 @@
-import React, {Component} from 'react';
+import React, {useState} from 'react';
 import './RegistrationForm.css';
 import AuthApiService from '../services/auth-api-service'
 // import {Redirect} from 'react-router-dom'
 
-export default class RegistrationForm extends Component {
+export default function RegistrationForm (props) {
 
-  static defaultProps = {
-    onLoginSuccess: () => {}
-  }
+  // static defaultProps = {
+  //   onLoginSuccess: () => {}
+  // }
 
-  state = { error: null }
+  // state = { error: null }
+ const [error, setError] = useState(null);
 
-  handleSubmitJwtAuth = ev => {
+  const handleSubmitJwtAuth = ev => {
     ev.preventDefault()
-    this.setState({ error: null })
+    setError(null);
+
     const { username, password, email } = ev.target
 
     AuthApiService.createUser({
@@ -24,18 +26,17 @@ export default class RegistrationForm extends Component {
       .then(res => {
         username.value = ''
         password.value = ''
-        this.props.onLoginSuccess()
+        props.onLoginSuccess()
       })
       .catch(res => {
-        this.setState({ error: res.error })
+        setError(res.error)
       })
   }
   // return <Redirect to='login'/>
 
-  render() {
-    
+  
     return (
-      <form className='signUpForm-form' onSubmit={this.handleSubmitJwtAuth}>
+      <form className='signUpForm-form' onSubmit={handleSubmitJwtAuth}>
         <fieldset className="registrationForm">
           <h3>Create an account</h3>
           <div className="form-group">
@@ -87,10 +88,14 @@ export default class RegistrationForm extends Component {
           />
           </div>
           <button className="btn" type='submit'>Submit</button>
-          {/* <input type='submit' value='submit' /> */}
+          {error}
         </fieldset>
   
       </form>
     );
-  }
+  
 };
+
+RegistrationForm.defaultProps = {
+  onLoginSuccess: () => {}
+}
