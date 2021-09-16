@@ -32,21 +32,34 @@ class AddProduct extends Component {
   static contextType = ApiContext;
 
   updateProduct_name = (product_name) => {
-    this.setState({ product_name: { value: product_name, touched: true } });
+    this.setState({ 
+      product_name: { 
+         value: product_name,
+         touched: true } 
+        });
   }
   updateProduct_price = (product_price) => {
-    this.setState({ product_price: { value: product_price, touched: true } });
+    this.setState({ 
+      product_price: { 
+        value: product_price,
+         touched: true } });
   }
   updateDate_posted = (date_posted) => {
-    this.setState({ date_posted: { value: date_posted, touched: true } });
+    this.setState({ 
+      date_posted: { 
+        value: date_posted, 
+        touched: true } });
   }
   updateDescription = (description) => {
-    this.setState({ description: { value: description, touched: true } });
+    this.setState({ 
+      description: { 
+        value: description,
+        touched: true } });
   }
   
   handleSubmit = e => {
     e.preventDefault();
-    const {product_name, product_price,date_posted,description } = e.target;
+    const {product_name, product_price, date_posted, description } = e.target;
     const product = {
       product_name: product_name.value,
       product_price: product_price.value,
@@ -55,7 +68,10 @@ class AddProduct extends Component {
     }
     console.log('message')
 
-    this.setState({ error: null })
+    this.setState({ 
+      error: null 
+    })
+
     console.log(`${config.API_ENDPOINT}/products`, {
       method: 'POST',
       body: JSON.stringify(product),

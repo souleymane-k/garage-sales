@@ -40,7 +40,7 @@ export default class App extends React.Component  {
     )
   }
 
-  
+  // Fetch data
   componentDidMount() {
     fetch(`${config.API_ENDPOINT}/products`,{
     method: 'GET',
@@ -54,12 +54,14 @@ export default class App extends React.Component  {
     
  }
 
- 
+ // Handle delete Product
  handleDeleteProduct = productId => {
   this.setState({
       products: this.state.products.filter(product => product.id !== productId)
   });
 };
+
+// handle delete Product
 handleAddProduct = product => {
   this.setState({
       products: [...this.state.products, product]
